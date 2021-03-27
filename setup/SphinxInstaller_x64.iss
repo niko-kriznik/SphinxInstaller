@@ -1,7 +1,7 @@
 
 ; WARNING: If you change TheAppName you also need to change TheDefaultDir!
 #define TheAppName "Sphinx"
-#define TheAppVersion "0.0.0"
+#define TheAppVersion "0.0.1"
 #define TheYear "2021"
 #define TheDefaultDir "C:\Sphinx"
 #define ThePythonPath "{app}\Python"
@@ -31,6 +31,10 @@ ChangesEnvironment=True
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
+; README
+Source: "{#SourcePath}..\README.md"; DestDir: "{app}"; Flags: ignoreversion
+; README
+Source: "{#SourcePath}..\CHANGELOG.txt"; DestDir: "{app}"; Flags: ignoreversion
 ; 7-zip
 Source: "{#SourcePath}..\vendor\7-zip\7za.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 ; Python patch so we can use pip

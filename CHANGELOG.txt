@@ -1,0 +1,13 @@
+Sphinx Installer CHANGELOG
+==========================
+
+
+v0.0.1     27-Mar-2021
+======================
+Added Inno Setup based installer that downloads and installs
+Python and pip. The script also installs the required pip
+packages that support Sphinx.
+The Sphinx binaries can be accessed via the `SPHINX_INSTALL_PATH`
+environment variable.
+
+Author: Niko Križnik
