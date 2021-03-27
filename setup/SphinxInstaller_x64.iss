@@ -34,6 +34,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Source: "{#SourcePath}..\vendor\7-zip\7za.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 ; Python patch so we can use pip
 Source: "{#SourcePath}..\{#ThePythonPTH}"; DestDir: "{#ThePythonPath}\"; Flags: ignoreversion
+; requirements.txt
+Source: "{#SourcePath}..\requirements.txt"; DestDir: "{#ThePythonPath}\"; Flags: ignoreversion
 ; Python archive
 Source: "{tmp}\{#ThePythonArchive}"; DestDir: "{tmp}"; Flags: external; \
     Check: DwinsHs_Check(ExpandConstant('{tmp}\{#ThePythonArchive}'), \
@@ -79,6 +81,7 @@ end;
 Type: filesandordirs; Name: "{#ThePythonPath}"
 
 [Run]
-Filename: "{tmp}\7za.exe"; Parameters: "x -aos {tmp}\{#ThePythonArchive} -o""{#ThePythonPath}"""; Flags: runhidden runascurrentuser
+Filename: "{tmp}\7za.exe"; Parameters: "x -aos ""{tmp}\{#ThePythonArchive}"" -o""{#ThePythonPath}"""; Flags: runhidden runascurrentuser
 Filename: "{#ThePythonPath}\python.exe"; Parameters: """{tmp}\{#TheGetPipScript}"" --no-warn-script-location"; Flags: runhidden runascurrentuser
 Filename: "{#ThePythonPath}\Scripts\pip.exe"; Parameters: "install --upgrade pip --no-warn-script-location"; Flags: runhidden runascurrentuser
+Filename: "{#ThePythonPath}\Scripts\pip.exe"; Parameters: "install -r ""{#ThePythonPath}\requirements.txt"" --no-warn-script-location"; Flags: runhidden runascurrentuser
