@@ -25,6 +25,7 @@ OutputBaseFilename=SphinxInstaller_x64
 Compression=lzma2/ultra64
 SolidCompression=yes
 PrivilegesRequired=admin
+ChangesEnvironment=True
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -85,3 +86,4 @@ Filename: "{tmp}\7za.exe"; Parameters: "x -aos ""{tmp}\{#ThePythonArchive}"" -o"
 Filename: "{#ThePythonPath}\python.exe"; Parameters: """{tmp}\{#TheGetPipScript}"" --no-warn-script-location"; Flags: runhidden runascurrentuser
 Filename: "{#ThePythonPath}\Scripts\pip.exe"; Parameters: "install --upgrade pip --no-warn-script-location"; Flags: runhidden runascurrentuser
 Filename: "{#ThePythonPath}\Scripts\pip.exe"; Parameters: "install -r ""{#ThePythonPath}\requirements.txt"" --no-warn-script-location"; Flags: runhidden runascurrentuser
+Filename: "setx.exe"; Parameters: "SPHINX_INSTALL_PATH ""{#ThePythonPath}\Scripts"" /M"; Flags: runhidden runascurrentuser
