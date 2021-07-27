@@ -1,7 +1,7 @@
 
 ; WARNING: If you change TheAppName you also need to change TheDefaultDir!
 #define TheAppName "Sphinx"
-#define TheAppVersion "0.0.1"
+#define TheAppVersion "0.0.2"
 #define TheYear "2021"
 #define TheDefaultDir "C:\Sphinx"
 #define ThePythonPath "{app}\Python"
