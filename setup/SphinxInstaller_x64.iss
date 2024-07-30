@@ -2,14 +2,14 @@
 ; WARNING: If you change TheAppName you also need to change TheDefaultDir!
 #define TheAppName "Sphinx"
 #define TheAppVersion "0.0.2"
-#define TheYear "2021"
+#define TheYear "2024"
 #define TheDefaultDir "C:\Sphinx"
 #define ThePythonPath "{app}\Python"
 #define TheOutputDir "..\_out"
 ; Python-related defines
-#define ThePythonVersion "3.8.8"
+#define ThePythonVersion "3.11.9"
 #define ThePythonArchive "python-embed-amd64.zip"
-#define ThePythonPTH "python38._pth"
+#define ThePythonPTH "python311._pth"
 #define TheGetPipScript "get-pip.py"
 
 [Setup]

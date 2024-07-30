@@ -1,6 +1,6 @@
-; *** DwinsHS version 1.2.3.127 English messages ***
+; *** DwinsHS version 1.3.0.148 English messages ***
 ;
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 DwinsHs_PageCaption =Downloading additional files
 DwinsHs_PageDescription =Please wait while setup downloads additional files...
 DwinsHs_TotalProgress =Total progress:
@@ -48,9 +48,9 @@ DwinsHs_Status_HTTPxxx =Other error
 DwinsHs_ReadyMemo_Download =Download files:
 DwinsHs_ReadyMemo_Downloaded =(Downloaded)
 
-; *** DwinsHS version 1.2.3.127 Chinese messages ***
+; *** DwinsHS version 1.3.0.148 Chinese messages ***
 ;
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 chs.DwinsHs_PageCaption =下载附加文件
 chs.DwinsHs_PageDescription =请等待安装程序下载附加的文件...
 chs.DwinsHs_TotalProgress =总进度：
@@ -91,18 +91,18 @@ chs.DwinsHs_Status_HTTP400 =无效请求
 chs.DwinsHs_Status_HTTP401 =未认证
 chs.DwinsHs_Status_HTTP404 =未发现
 chs.DwinsHs_Status_HTTP407 =代理需要认证
-chs.DwinsHs_Status_HTTP500 =内部称为
+chs.DwinsHs_Status_HTTP500 =内部错误
 chs.DwinsHs_Status_HTTP502 =无效网关
 chs.DwinsHs_Status_HTTP503 =服务不可用
 chs.DwinsHs_Status_HTTPxxx =其它错误
 chs.DwinsHs_ReadyMemo_Download =下载文件：
 chs.DwinsHs_ReadyMemo_Downloaded =(已经下载)
 
-; *** DwinsHS version 1.2.3.127 Spanish messages ***
+; *** DwinsHS version 1.3.0.148 Spanish messages ***
 ;
 ; Maintained by Juan Urbina (Heurze)(heurze@yahoo.com)
 ; Spanish isl version 1.0.0 (20171209)
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 es.DwinsHs_PageCaption =Descargando archivos adicionales
 es.DwinsHs_PageDescription =Por favor espere mientras en instalador descarga los archivos adicionales…
 es.DwinsHs_TotalProgress =Progreso total:
@@ -150,10 +150,10 @@ es.DwinsHs_Status_HTTPxxx =Otro error
 es.DwinsHs_ReadyMemo_Download =Descargar archivos:
 es.DwinsHs_ReadyMemo_Downloaded =(Descargado)
 
-; *** DwinsHS version 1.2.3.127 Spanish messages ***
+; *** DwinsHS version 1.3.0.148 Spanish messages ***
 ;
 ; Maintained by Angel Montes Oca (joesatriani10@gmail.com)
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 es.DwinsHs_PageCaption =Descargar archivos adicionales
 es.DwinsHs_PageDescription =Por favor espere mientras se descargan los archivos...
 es.DwinsHs_TotalProgress =Progreso total:
@@ -201,9 +201,9 @@ es.DwinsHs_Status_HTTPxxx =Error desconocido
 es.DwinsHs_ReadyMemo_Download =Descargar archivos:
 es.DwinsHs_ReadyMemo_Downloaded =(Descargado)
 
-; *** DwinsHS version 1.2.3.127 French messages ***
+; *** DwinsHS version 1.3.0.148 French messages ***
 ;
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 fr.DwinsHs_PageCaption =Le téléchargement de fichiers supplémentaires
 fr.DwinsHs_PageDescription =Se il vous plaît patienter pendant configuration télécharge des fichiers supplémentaires...
 fr.DwinsHs_TotalProgress =Cours Total:
@@ -251,10 +251,10 @@ fr.DwinsHs_Status_HTTPxxx =Autre erreur
 fr.DwinsHs_ReadyMemo_Download =Telecharger des fichiers:
 fr.DwinsHs_ReadyMemo_Downloaded =(Téléchargé)
 
-; *** DwinsHS version 1.2.3.127 Dutch messages ***
+; *** DwinsHS version 1.3.0.148 Dutch messages ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Dutch.DwinsHs_PageCaption=Extra bestanden worden gedownload
 Dutch.DwinsHs_PageDescription=Wacht even op het downloaden van extra bestanden...
 Dutch.DwinsHs_TotalProgress=Voortgang:
@@ -302,10 +302,10 @@ Dutch.DwinsHs_Status_HTTPxxx=Andere fout
 Dutch.DwinsHs_ReadyMemo_Download =Bestanden downloaden:
 Dutch.DwinsHs_ReadyMemo_Downloaded =(Gedownloade)
 
-; *** DwinsHS version 1.2.3.127 Italian messages (Andrew Truckle<truckleaj-software@hotmail.co.uk>) ***
+; *** DwinsHS version 1.3.0.148 Italian messages (Andrew Truckle<truckleaj-software@hotmail.co.uk>) ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Italian.DwinsHs_PageCaption=Scaricamento file aggiuntivi
 Italian.DwinsHs_PageDescription=Attendi mentre il setup scarica i file aggiuntivi...
 Italian.DwinsHs_TotalProgress=Avanzamento totale:
@@ -353,10 +353,10 @@ Italian.DwinsHs_Status_HTTPxxx=Altro errore
 Italian.DwinsHs_ReadyMemo_Download =Scaricare files:
 Italian.DwinsHs_ReadyMemo_Downloaded =(Scaricati)
 
-; *** DwinsHS version 1.2.3.127 Russian messages (Andrew Truckle<truckleaj-software@hotmail.co.uk>) ***
+; *** DwinsHS version 1.3.0.148 Russian messages (Andrew Truckle<truckleaj-software@hotmail.co.uk>) ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Russian.DwinsHs_PageCaption=Загрузка дополнительных файлов
 Russian.DwinsHs_PageDescription=Подождите, пока программа установки загрузит дополнительные файлы...
 Russian.DwinsHs_TotalProgress=Общий прогресс:
@@ -404,10 +404,10 @@ Russian.DwinsHs_Status_HTTPxxx=Другая ошибка
 Russian.DwinsHs_ReadyMemo_Download =Скачать файлы:
 Russian.DwinsHs_ReadyMemo_Downloaded =(загруженный)
 
-; *** DwinsHS version 1.2.3.127 Romanian messages (Andrew Truckle<truckleaj-software@hotmail.co.uk>) ***
+; *** DwinsHS version 1.3.0.148 Romanian messages (Andrew Truckle<truckleaj-software@hotmail.co.uk>) ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Romanian.DwinsHs_PageCaption=Descărcarea fișierelor suplimentare
 Romanian.DwinsHs_PageDescription=Vă rugăm să așteptați în timp ce setup-ul descarcă fișierele suplimentare...
 Romanian.DwinsHs_TotalProgress=Progres total:
@@ -455,10 +455,10 @@ Romanian.DwinsHs_Status_HTTPxxx=Alte erori
 Romanian.DwinsHs_ReadyMemo_Download =Descărcați fișiere:
 Romanian.DwinsHs_ReadyMemo_Downloaded =(Descarcat)
 
-; *** DwinsHS version 1.2.3.127 Portuguese Brazil messages ***
+; *** DwinsHS version 1.3.0.148 Portuguese Brazil messages ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Portuguese.DwinsHs_PageCaption=Baixando arquivos adicionais
 Portuguese.DwinsHs_PageDescription=Por favor aguarde enquanto a instalação baixa arquivos adicionais ...
 Portuguese.DwinsHs_TotalProgress=Progresso total:
@@ -506,10 +506,10 @@ Portuguese.DwinsHs_Status_HTTPxxx=Outro erro
 Portuguese.DwinsHs_ReadyMemo_Download =Baixar arquivos:
 Portuguese.DwinsHs_ReadyMemo_Downloaded =(Transferido)
 
-; *** DwinsHS version 1.2.3.127 Turkish messages ***
+; *** DwinsHS version 1.3.0.148 Turkish messages ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Turkish.DwinsHs_PageCaption=Ek dosyalar indiriliyor
 Turkish.DwinsHs_PageDescription=Kurulum ek dosyaları indirirken lütfen bekleyin...
 Turkish.DwinsHs_TotalProgress=Toplam ilerleme:
@@ -557,10 +557,10 @@ Turkish.DwinsHs_Status_HTTPxxx=Başka hata
 Turkish.DwinsHs_ReadyMemo_Download =Dosyaları indir:
 Turkish.DwinsHs_ReadyMemo_Downloaded =(İndirildi)
 
-; *** DwinsHS version 1.2.3.127 Danish messages ***
+; *** DwinsHS version 1.3.0.148 Danish messages ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Danish.DwinsHs_PageCaption=Downloader flere filer
 Danish.DwinsHs_PageDescription=Vent venligst mens opsætningen downloader yderligere filer ...
 Danish.DwinsHs_TotalProgress=Samlet fremskridt:
@@ -608,10 +608,10 @@ Danish.DwinsHs_Status_HTTPxxx=Anden fejl
 Danish.DwinsHs_ReadyMemo_Download =Download filer:
 Danish.DwinsHs_ReadyMemo_Downloaded =(Downloadet)
 
-; *** DwinsHS version 1.2.3.127 Hungarian messages ***
+; *** DwinsHS version 1.3.0.148 Hungarian messages ***
 ;
 ; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
-; DwinsHS version 1.2.3.127
+; DwinsHS version 1.3.0.148
 Hungarian.DwinsHs_PageCaption=Egyéb fájlok letöltése
 Hungarian.DwinsHs_PageDescription=Kérlek várj, míg letöltődnek a fájlok…
 Hungarian.DwinsHs_TotalProgress=Teljes folyamat:
@@ -658,3 +658,156 @@ Hungarian.DwinsHs_Status_HTTP503=Szolgálatás nem elérhető
 Hungarian.DwinsHs_Status_HTTPxxx=Egyéb hiba
 Hungarian.DwinsHs_ReadyMemo_Download =Fájlok letöltése:
 Hungarian.DwinsHs_ReadyMemo_Downloaded =(Letöltve)
+
+; *** DwinsHS version 1.3.0.148 Indonesian messages ***
+;
+; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
+; DwinsHS version 1.3.0.148
+Indonesian.DwinsHs_PageCaption=Mengunduh file tambahan
+Indonesian.DwinsHs_PageDescription=Harap tunggu sementara pengaturan mengunduh beberapa file tambahan...
+Indonesian.DwinsHs_TotalProgress=Total kemajuan:
+Indonesian.DwinsHs_CurrentFile=File saat ini:
+Indonesian.DwinsHs_File=File:
+Indonesian.DwinsHs_Speed=Kecepatan:
+Indonesian.DwinsHs_Status=Status:
+Indonesian.DwinsHs_ElapsedTime=Waktu berlalu:
+Indonesian.DwinsHs_RemainingTime=Waktu yang tersisa:
+Indonesian.DwinsHs_Status_ButtonRetry=&Ulangi
+Indonesian.DwinsHs_Status_ButtonNext=&Lanjutkan >
+Indonesian.DwinsHs_SizeInBytes=%d Bytes
+Indonesian.DwinsHs_SizeInKB=%.2f KB
+Indonesian.DwinsHs_SizeInMB=%.2f MB
+Indonesian.DwinsHs_ProgressValue= %s dari %s (%d%%%)
+Indonesian.DwinsHs_SpeedInBytes=%d Byte/s
+Indonesian.DwinsHs_SpeedInKB=%.2f KB/s
+Indonesian.DwinsHs_SpeedInMB=%.2f MB/s
+Indonesian.DwinsHs_TimeInHour=%d jam, %d menit, %d detik
+Indonesian.DwinsHs_TimeInMinute=%d menit, %d detik
+Indonesian.DwinsHs_TimeInSecond=%d detik
+Indonesian.DwinsHs_Status_GetFileInformation =Mengambil ukuran file
+Indonesian.DwinsHs_Status_StartingDownload=Mulai mengunduh
+Indonesian.DwinsHs_Status_Downloading=Sedang Mengunduh
+Indonesian.DwinsHs_Status_DownlaodComplete=Selesai Mengunduh
+Indonesian.DwinsHs_Error_Network=Tidak ada koneksi internet yang aktif
+Indonesian.DwinsHs_Error_Offline=Komputer berada dalam mode offline
+Indonesian.DwinsHs_Error_Initialize=Gagal menginisialisasi pengaturan
+Indonesian.DwinsHs_Error_OpenSession=Gagal membuka sesi FTP atau HTTP
+Indonesian.DwinsHs_Error_CreateRequest=Gagal membuat penanganan permintaan HTTP
+Indonesian.DwinsHs_Error_SendRequest=Gagal mengirim permintaan ke server HTTP
+Indonesian.DwinsHs_Error_DeleteFile=File lama tidak dapat dihapus
+Indonesian.DwinsHs_Error_SaveFile=Gagal menyimpan data
+Indonesian.DwinsHs_Error_Canceled=Unduhan dibatalkan
+Indonesian.DwinsHs_Error_ReadData=Gagal membaca data
+Indonesian.DwinsHs_Status_HTTPError=Kesalahan HTTP %d: %s
+Indonesian.DwinsHs_Status_HTTP400=Permintaan tidak layak
+Indonesian.DwinsHs_Status_HTTP401=Tidak sah
+Indonesian.DwinsHs_Status_HTTP404=Tidak ditemukan
+Indonesian.DwinsHs_Status_HTTP407=Diperlukan otentikasi proxy
+Indonesian.DwinsHs_Status_HTTP500=Kesalahan internal
+Indonesian.DwinsHs_Status_HTTP502=Bad Gateway
+Indonesian.DwinsHs_Status_HTTP503=Layanan tidak tersedia
+Indonesian.DwinsHs_Status_HTTPxxx=Kesalahan lainnya
+Indonesian.DwinsHs_ReadyMemo_Download =Unduh file:
+Indonesian.DwinsHs_ReadyMemo_Downloaded =(Download)
+
+; *** DwinsHS version 1.3.0.148 German messages ***
+;
+; Maintained by Andrew Truckle<truckleaj-software@hotmail.co.uk>
+; DwinsHS version 1.3.0.148
+German.DwinsHs_PageCaption=Herunterladen von zusätzlichen Dateien
+German.DwinsHs_PageDescription=Bitte warte, während das Setup zusätzliche Dateien herunterlädt...
+German.DwinsHs_TotalProgress=Gesamtfortschritt:
+German.DwinsHs_CurrentFile=Aktuelle Datei:
+German.DwinsHs_File=Datei:
+German.DwinsHs_Speed=Geschwindigkeit:
+German.DwinsHs_Status=Status:
+German.DwinsHs_ElapsedTime=Verstrichene Zeit:
+German.DwinsHs_RemainingTime=Verbleibende Zeit:
+German.DwinsHs_Status_ButtonRetry=&Erneut versuchen
+German.DwinsHs_Status_ButtonNext=&Weiter >
+German.DwinsHs_SizeInBytes=%d Bytes
+German.DwinsHs_SizeInKB=%.2f KB
+German.DwinsHs_SizeInMB=%.2f MB
+German.DwinsHs_ProgressValue= %s von %s (%d%%%)
+German.DwinsHs_SpeedInBytes=%d Byte/s
+German.DwinsHs_SpeedInKB=%.2f KB/s
+German.DwinsHs_SpeedInMB=%.2f MB/s
+German.DwinsHs_TimeInHour=%d Stunde(n), %d Minute(n), %d Sekunde(n)
+German.DwinsHs_TimeInMinute=%d Minute(n), %d Sekunde(n)
+German.DwinsHs_TimeInSecond=%d Sekunde(n)
+German.DwinsHs_Status_GetFileInformation=Dateigröße ermitteln
+German.DwinsHs_Status_StartingDownload=Herunterladen starten
+German.DwinsHs_Status_Downloading=Herunterladen
+German.DwinsHs_Status_DownlaodComplete=Herunterladen abgeschlossen
+German.DwinsHs_Error_Network=Keine aktive Internetverbindung
+German.DwinsHs_Error_Offline=Der Computer befindet sich im Offline-Modus.
+German.DwinsHs_Error_Initialize=Das Setup konnte nicht initialisiert werden.
+German.DwinsHs_Error_OpenSession=Die FTP- oder HTTP-Sitzung konnte nicht geöffnet werden.
+German.DwinsHs_Error_CreateRequest=Es wurde kein HTTP-Request-Handle erstellt.
+German.DwinsHs_Error_SendRequest=Die Anfrage konnte nicht an den HTTP-Server gesendet werden.
+German.DwinsHs_Error_DeleteFile=Die bisherige Datei kann nicht gelöscht werden.
+German.DwinsHs_Error_SaveFile=Daten konnten nicht gespeichert werden
+German.DwinsHs_Error_Canceled=Herunterladen abgebrochen
+German.DwinsHs_Error_ReadData=Daten konnten nicht gelesen werden
+German.DwinsHs_Status_HTTPError=HTTP Fehler %d: %s
+German.DwinsHs_Status_HTTP400=Bad request
+German.DwinsHs_Status_HTTP401=Nicht autorisiert
+German.DwinsHs_Status_HTTP404=Nicht gefunden
+German.DwinsHs_Status_HTTP407=Proxy-Authentifizierung erforderlich
+German.DwinsHs_Status_HTTP500=Interner Fehler
+German.DwinsHs_Status_HTTP502=Bad gateway
+German.DwinsHs_Status_HTTP503=Der Dienst ist nicht verfügbar.
+German.DwinsHs_Status_HTTPxxx=Anderer Fehler
+German.DwinsHs_ReadyMemo_Download =Dateien herunterladen:
+German.DwinsHs_ReadyMemo_Downloaded =(Heruntergeladene)
+
+; *** DwinsHS version 1.3.0.148 Polish messages ***
+;
+; Maintained by Andrew Andrzej Rudnik<arudnik@arudnik.pl>
+; DwinsHS version 1.3.0.148
+Polish.DwinsHs_PageCaption =Pobieranie dodatkowych plików
+Polish.DwinsHs_PageDescription =Proszę czekać, instalator pobiera dodatkowe pliki...
+Polish.DwinsHs_TotalProgress =Całkowity postęp:
+Polish.DwinsHs_CurrentFile =Bieżący plik:
+Polish.DwinsHs_File =Plik:
+Polish.DwinsHs_Speed =Prędkość:
+Polish.DwinsHs_Status =Status:
+Polish.DwinsHs_ElapsedTime =Czas pobierania:
+Polish.DwinsHs_RemainingTime =Pozostały czas:
+Polish.DwinsHs_Status_ButtonRetry =&Powtórz
+Polish.DwinsHs_Status_ButtonNext =&Dalej >
+Polish.DwinsHs_SizeInBytes =%d bajtów
+Polish.DwinsHs_SizeInKB =%.2f KB
+Polish.DwinsHs_SizeInMB =%.2f MB
+Polish.DwinsHs_ProgressValue = %s z %s (%d%%%)
+Polish.DwinsHs_SpeedInBytes =%d Byte/s
+Polish.DwinsHs_SpeedInKB =%.2f KB/s
+Polish.DwinsHs_SpeedInMB =%.2f MB/s
+Polish.DwinsHs_TimeInHour = %d godzin(y), %d minut(y), %d sekund(y)
+Polish.DwinsHs_TimeInMinute = %d minut(y), %d sekund(y)
+Polish.DwinsHs_TimeInSecond = %d sekund(y)
+Polish.DwinsHs_Status_GetFileInformation =Sprawdzanie wielkości pliku
+Polish.DwinsHs_Status_StartingDownload =Rozpoczęcie pobierania
+Polish.DwinsHs_Status_Downloading =Pobieranie
+Polish.DwinsHs_Status_DownloadComplete =Pobieranie zakończone
+Polish.DwinsHs_Error_Network =Brak aktywnego połączenia z internetem
+Polish.DwinsHs_Error_Offline =Komputer pracuje w trybie offline
+Polish.DwinsHs_Error_Initialize =Błąd inicjalizacji instalacji
+Polish.DwinsHs_Error_OpenSession =Błąd otwarcia sesji FTP lub HTTP
+Polish.DwinsHs_Error_CreateRequest =Błąd utworzenia żądania HTTP
+Polish.DwinsHs_Error_SendRequest =Błąd wysyłania żądania do serwera HTTP
+Polish.DwinsHs_Error_DeleteFile =Nie można usunąć starego pliku
+Polish.DwinsHs_Error_SaveFile =Błąd zapisu danych
+Polish.DwinsHs_Error_Canceled =Pobieranie anulowane
+Polish.DwinsHs_Error_ReadData =Błąd odczytu danych
+Polish.DwinsHs_Status_HTTPError =Błąd HTTP %d: %s
+Polish.DwinsHs_Status_HTTP400 =Nieprawidłowe zapytanie
+Polish.DwinsHs_Status_HTTP401 =Brak autoryzacji
+Polish.DwinsHs_Status_HTTP404 =Nie znaleziono
+Polish.DwinsHs_Status_HTTP407 =Wymagana autoryzacja Proxy
+Polish.DwinsHs_Status_HTTP500 =Błąd wewnętrzny
+Polish.DwinsHs_Status_HTTP502 =Nieprawidłowa bramka
+Polish.DwinsHs_Status_HTTP503 =Usługa niedostępna
+Polish.DwinsHs_Status_HTTPxxx =Inny błąd
+Polish.DwinsHs_ReadyMemo_Download =Pobierz pliki:
+Polish.DwinsHs_ReadyMemo_Downloaded =(Pobrane)

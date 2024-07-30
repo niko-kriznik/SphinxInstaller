@@ -6,7 +6,7 @@
 //    WebURL: http://www.han-soft.com
 //    Copyright (C) 2001, 2015 Han-soft Corporation. All rights reserved.
 // =====================================================================================================================
-//    $Rev: 140 $  $Id: dwinshs.iss 140 2019-10-24 17:33:32Z hanjy $
+//    $Rev: 153 $  $Id: dwinshs.iss 153 2022-10-15 10:10:18Z hanjy $
 // =====================================================================================================================
 
 #define Use_DwinsHs
@@ -132,6 +132,13 @@ const
   INTERNET_OPEN_TYPE_PROXY = 3;
   INTERNET_OPTION_PROXY_USERNAME = 43;
   INTERNET_OPTION_PROXY_PASSWORD = 44;
+  INTERNET_OPTION_CONNECT_TIMEOUT = 2;
+  INTERNET_OPTION_CONTROL_SEND_TIMEOUT = 5;
+  INTERNET_OPTION_CONTROL_RECEIVE_TIMEOUT = 6;
+  INTERNET_OPTION_DATA_SEND_TIMEOUT = 7;
+  INTERNET_OPTION_DATA_RECEIVE_TIMEOUT = 8;
+  INTERNET_OPTION_SECURITY_SELECT_CLIENT_CERT = 47;
+  ERROR_INTERNET_CLIENT_AUTH_CERT_NEEDED = 12044;
   INTERNET_SERVICE_FTP = 1;
   INTERNET_SERVICE_HTTP = 3;
   INTERNET_FLAG_RELOAD = $80000000;
@@ -150,6 +157,31 @@ const
     #define DwinsHs_Data_Buffer_Length 65535
   #endif
   READ_BUFFER_LENGTH = {#DwinsHs_Data_Buffer_Length};
+
+  #ifndef DwinsHs_Data_Send_Timeout
+    #define DwinsHs_Data_Send_Timeout 0
+  #endif
+  SEND_DATA_TIMEOUT = {#DwinsHs_Data_Send_Timeout};
+
+  #ifndef DwinsHs_Data_Read_Timeout
+    #define DwinsHs_Data_Read_Timeout 0
+  #endif
+  READ_DATA_TIMEOUT = {#DwinsHs_Data_Read_Timeout};
+
+  #ifndef DwinsHs_Ctrl_Send_Timeout
+    #define DwinsHs_Ctrl_Send_Timeout 0
+  #endif
+  SEND_CTRL_TIMEOUT = {#DwinsHs_Ctrl_Send_Timeout};
+
+  #ifndef DwinsHs_Ctrl_Read_Timeout
+    #define DwinsHs_Ctrl_Read_Timeout 0
+  #endif
+  READ_CTRL_TIMEOUT = {#DwinsHs_Ctrl_Read_Timeout};
+
+  #ifndef DwinsHs_Connect_Timeout
+    #define DwinsHs_Connect_Timeout 0
+  #endif
+  CONNECT_TIMEOUT = {#DwinsHs_Connect_Timeout};
 
   CONNECT_OK = 0;
   CONNECT_ERROR_NETWORK = 1;
@@ -265,6 +297,26 @@ begin
   DwinsHs_Proxy.Password := Password;
 end;
 
+procedure SetTimeout(hSession: HINTERNET; kind: DWORD; Timeout: DWORD);
+var
+  Buffer: AnsiString;
+begin
+  if Timeout > 0 then
+  begin
+    SetLength(Buffer, 5);
+    try
+      Buffer[0] := Chr((Timeout and $FF000000) shr 24);
+      Buffer[1] := Chr((Timeout and $00FF0000) shr 16);
+      Buffer[2] := Chr((Timeout and $0000FF00) shr 8);
+      Buffer[3] := Chr(Timeout and $000000FF);
+      Buffer[4] := Chr(0);
+      InternetSetOption(hSession, kind, PAnsiChar(Buffer), 4);
+    finally
+      SetLength(Buffer, 0);
+    end
+  end;
+end;
+
 function CreateConnect(URL, Agent: AnsiString; Method: TReadMethod; var hSession, hConnect, hRequest: HINTERNET;
   var Size: {#BIG_INT}): Integer;
 var
@@ -273,7 +325,7 @@ var
   Port, i: Integer;
   Buffer: AnsiString;
   Flag, Bytes: DWord;
-  Sended: Boolean;
+  Sended, Retry: Boolean;
   #ifdef UNICODE
   SizeH, SizeL: DWord;
   #endif
@@ -311,7 +363,11 @@ begin
     end;
   end;
   if hSession = 0 then Exit;
-
+  SetTimeout(hSession, INTERNET_OPTION_CONNECT_TIMEOUT, CONNECT_TIMEOUT);
+  SetTimeout(hSession, INTERNET_OPTION_CONTROL_SEND_TIMEOUT, SEND_CTRL_TIMEOUT);
+  SetTimeout(hSession, INTERNET_OPTION_CONTROL_RECEIVE_TIMEOUT, READ_CTRL_TIMEOUT);
+  SetTimeout(hSession, INTERNET_OPTION_DATA_SEND_TIMEOUT, SEND_DATA_TIMEOUT);
+  SetTimeout(hSession, INTERNET_OPTION_DATA_RECEIVE_TIMEOUT, READ_DATA_TIMEOUT);
   Result := CONNECT_ERROR_OPENSESSION;
   case Scheme of
     rpHttp, rpHttps:
@@ -354,9 +410,24 @@ begin
         Exit;
       end;
       Result := CONNECT_ERROR_SENDREQUEST;
-      case Method of
-        rmGet: Sended := HttpSendRequest(hRequest, HTTP_HEADER, Length(HTTP_HEADER), '', 0);
-        rmPost: Sended := HttpSendRequest(hRequest, HTTP_HEADER, Length(HTTP_HEADER), PAnsiChar(Data), Length(Data));
+      Sended := False;
+      Retry := False;
+      while not Sended do
+      begin
+        case Method of
+          rmGet: Sended := HttpSendRequest(hRequest, HTTP_HEADER, Length(HTTP_HEADER), '', 0);
+          rmPost: Sended := HttpSendRequest(hRequest, HTTP_HEADER, Length(HTTP_HEADER), PAnsiChar(Data), Length(Data));
+        end;
+        if Sended then Break;
+        if DLLGetLastError() <> ERROR_INTERNET_CLIENT_AUTH_CERT_NEEDED then Break;
+        if Retry then Break;
+        Retry := True;
+        SetLength(Buffer, 4);
+        try
+          InternetSetOption(hRequest, INTERNET_OPTION_SECURITY_SELECT_CLIENT_CERT, PAnsiChar(Buffer), 4);
+        finally
+          SetLength(Buffer, 0);
+        end;
       end;
       if Sended then
       begin
@@ -548,7 +619,7 @@ DwinsHs_Error_CreateRequest =Failed to create an HTTP request handle
 DwinsHs_Error_SendRequest =Failed to send request to the HTTP server
 DwinsHs_Error_DeleteFile =The old file cannot be deleted
 DwinsHs_Error_SaveFile =Failed to save data
-DwinsHs_Error_Canceled =Download canceled
+DwinsHs_Error_Canceled =Download cancelled
 DwinsHs_Error_ReadData =Failed to read data
 
 DwinsHs_Status_HTTPError =HTTP error %d: %s
@@ -1160,7 +1231,7 @@ begin
         end;
         Result := Result + NewLine;
     end;
-  end;  
+  end;
   if Result <> '' then
   begin
     Result := ExpandConstant('{cm:DwinsHs_ReadyMemo_Download}') + NewLine + Result;
