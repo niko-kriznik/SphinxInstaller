@@ -22,8 +22,8 @@ The full history of changes is listed in history.txt in main 7-Zip program.
 
 18.05          2018-04-30
 -------------------------
-- The speed for LZMA/LZMA2 compressing was increased 
-    by 8% for fastest/fast compression levels and 
+- The speed for LZMA/LZMA2 compressing was increased
+    by 8% for fastest/fast compression levels and
     by 3% for normal/maximum compression levels.
 
 
@@ -82,15 +82,15 @@ The full history of changes is listed in history.txt in main 7-Zip program.
 4.34 beta           2006-02-27
 ------------------------------
   - ISetProperties::SetProperties:
-      it's possible to specify desirable number of CPU threads: 
+      it's possible to specify desirable number of CPU threads:
            PROPVARIANT: name=L"mt", vt = VT_UI4, ulVal = NumberOfThreads
-      If "mt" is not defined, 7za.dll will check number of processors in system to set 
-      number of desirable threads. 
+      If "mt" is not defined, 7za.dll will check number of processors in system to set
+      number of desirable threads.
       Now 7za.dll can use:
         2 threads for LZMA compressing
         N threads for BZip2 compressing
         4 threads for BZip2 decompressing
-      Other codecs use only one thread. 
+      Other codecs use only one thread.
       Note: 7za.dll can use additional "small" threads with low CPU load.
   - It's possible to call ISetProperties::SetProperties to specify "mt" property for decoder.
 
@@ -98,7 +98,7 @@ The full history of changes is listed in history.txt in main 7-Zip program.
 4.33 beta           2006-02-05
 ------------------------------
   - Compressing speed and Memory requirements were increased.
-    Default dictionary size was increased: Fastest: 64 KB, Fast: 1 MB, 
+    Default dictionary size was increased: Fastest: 64 KB, Fast: 1 MB,
     Normal: 4 MB, Max: 16 MB, Ultra: 64 MB.
   - 7z/LZMA now can use only these match finders: HC4, BT2, BT3, BT4
 

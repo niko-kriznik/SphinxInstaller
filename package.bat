@@ -5,7 +5,7 @@ set setup_dir=_out
 
 echo [!TIME!]:
 echo [!TIME!]: ------------------
-echo [!TIME!]:    Packaging...   
+echo [!TIME!]:    Packaging...
 echo [!TIME!]: ------------------
 
 rmdir /Q/S %setup_dir% 2> nul
@@ -18,14 +18,14 @@ if not !ERRORLEVEL! EQU 0 goto :ErrorOccured
 
 echo [!TIME!]:
 echo [!TIME!]: -------------------------
-echo [!TIME!]:    Finished packaging!   
+echo [!TIME!]:    Finished packaging!
 echo [!TIME!]: -------------------------
 GOTO :eof
 
 :ErrorOccured
 echo [!TIME!]:
 echo [!TIME!]: ---------------------
-echo [!TIME!]:    Error occurred!   
+echo [!TIME!]:    Error occurred!
 echo [!TIME!]: ---------------------
 endlocal
 pause
